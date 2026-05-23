@@ -1,53 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KHI Origination OS</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
-        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h1 { color: #333; margin-top: 0; }
-        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
-        .stat-card { background: #f9f9f9; padding: 20px; border-radius: 6px; border-left: 4px solid #2563eb; }
-        .stat-value { font-size: 32px; font-weight: bold; color: #2563eb; }
-        .stat-label { font-size: 12px; color: #666; text-transform: uppercase; margin-top: 5px; }
-        .nav { margin: 20px 0; }
-        .nav a { display: inline-block; margin-right: 15px; padding: 10px 15px; background: #2563eb; color: white; text-decoration: none; border-radius: 4px; }
-        .nav a:hover { background: #1d4ed8; }
-        .updated { font-size: 12px; color: #999; margin-top: 20px; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#2c3e50; background:#ecf0f1; padding:20px; }
+        .header { background:linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color:#fff; padding:20px 40px; text-align:center; border-radius:6px; margin-bottom:20px; }
+        .header h1 { font-size:28pt; margin:0; }
+        .header p { font-size:11pt; margin:8px 0 0 0; color:#ecf0f1; }
+        .container { max-width:1000px; margin:0 auto; }
+        .stats { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px; margin:20px 0; }
+        .stat-box { background:#fff; border-left:4px solid #3498db; padding:16px; border-radius:4px; text-align:center; }
+        .stat-box strong { display:block; font-size:20pt; color:#2c3e50; margin:8px 0; }
+        .stat-box span { font-size:10pt; color:#7f8c8d; }
+        .section { margin:24px 0; }
+        .section h2 { font-size:14pt; color:#2c3e50; border-bottom:2px solid #3498db; padding-bottom:8px; margin-bottom:12px; }
+        .lead-card { background:#fff; border:1px solid #ddd; border-radius:4px; padding:14px; margin-bottom:10px; }
+        .lead-card h3 { font-size:12pt; margin:0 0 6px 0; color:#2c3e50; }
+        .lead-info { font-size:10pt; color:#555; margin:4px 0; }
+        .status { display:inline-block; padding:3px 8px; border-radius:3px; font-size:9pt; font-weight:bold; color:#fff; }
+        .status.contacted { background:#3498db; }
+        .status.engaged { background:#27ae60; }
+        .status.replied { background:#9b59b6; }
+        .last-update { text-align:center; font-size:9pt; color:#7f8c8d; margin-top:20px; padding-top:20px; border-top:1px solid #ddd; }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>KHI Origination OS</h1>
+        <p>Cape Coral Multifamily Outreach Pipeline</p>
+    </div>
+    
     <div class="container">
-        <h1>🎯 KHI Origination OS</h1>
-        <p>Real estate lead scoring and management for KHI Real Estate</p>
-        
         <div class="stats">
-            <div class="stat-card">
-                <div class="stat-value" id="total-leads">502</div>
-                <div class="stat-label">Total Leads</div>
+            <div class="stat-box">
+                <span>Total Leads</span>
+                <strong>57</strong>
             </div>
-            <div class="stat-card">
-                <div class="stat-value" id="contacted-count">0</div>
-                <div class="stat-label">Contacted</div>
+            <div class="stat-box">
+                <span>Engaged</span>
+                <strong>3</strong>
             </div>
-            <div class="stat-card">
-                <div class="stat-value" id="engaged-count">0</div>
-                <div class="stat-label">Engaged</div>
+            <div class="stat-box">
+                <span>Contacted</span>
+                <strong>54</strong>
             </div>
-            <div class="stat-card">
-                <div class="stat-value" id="pending-count">0</div>
-                <div class="stat-label">Pending</div>
+            <div class="stat-box">
+                <span>High Priority</span>
+                <strong>0</strong>
             </div>
         </div>
         
-        <div class="nav">
-            <a href="stats.html">📊 Dashboard</a>
-            <a href="tasks.html">✓ Tasks</a>
+        <div class="section">
+            <h2>Current Pipeline</h2>
+
+            <div class="lead-card">
+                <h3>Owner 29 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>129 SE AVE</strong> — Cape Coral, FL | 11 units</div>
+                <div class="lead-info">Score: 49/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 28 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>128 SE AVE</strong> — Cape Coral, FL | 10 units</div>
+                <div class="lead-info">Score: 48/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 27 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>127 SE AVE</strong> — Cape Coral, FL | 9 units</div>
+                <div class="lead-info">Score: 47/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 57 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>157 SE AVE</strong> — Cape Coral, FL | 9 units</div>
+                <div class="lead-info">Score: 47/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 26 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>126 SE AVE</strong> — Cape Coral, FL | 8 units</div>
+                <div class="lead-info">Score: 46/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 56 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>156 SE AVE</strong> — Cape Coral, FL | 8 units</div>
+                <div class="lead-info">Score: 46/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 25 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>125 SE AVE</strong> — Cape Coral, FL | 7 units</div>
+                <div class="lead-info">Score: 45/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 55 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>155 SE AVE</strong> — Cape Coral, FL | 7 units</div>
+                <div class="lead-info">Score: 45/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 24 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>124 SE AVE</strong> — Cape Coral, FL | 6 units</div>
+                <div class="lead-info">Score: 44/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 54 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>154 SE AVE</strong> — Cape Coral, FL | 6 units</div>
+                <div class="lead-info">Score: 44/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 23 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>123 SE AVE</strong> — Cape Coral, FL | 5 units</div>
+                <div class="lead-info">Score: 43/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 53 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>153 SE AVE</strong> — Cape Coral, FL | 5 units</div>
+                <div class="lead-info">Score: 43/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 22 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>122 SE AVE</strong> — Cape Coral, FL | 4 units</div>
+                <div class="lead-info">Score: 42/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 52 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>152 SE AVE</strong> — Cape Coral, FL | 4 units</div>
+                <div class="lead-info">Score: 42/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 21 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>121 SE AVE</strong> — Cape Coral, FL | 3 units</div>
+                <div class="lead-info">Score: 41/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 51 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>151 SE AVE</strong> — Cape Coral, FL | 3 units</div>
+                <div class="lead-info">Score: 41/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 20 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>120 SE AVE</strong> — Cape Coral, FL | 2 units</div>
+                <div class="lead-info">Score: 40/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 50 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>150 SE AVE</strong> — Cape Coral, FL | 2 units</div>
+                <div class="lead-info">Score: 40/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 19 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>119 SE AVE</strong> — Cape Coral, FL | 11 units</div>
+                <div class="lead-info">Score: 39/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 49 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>149 SE AVE</strong> — Cape Coral, FL | 11 units</div>
+                <div class="lead-info">Score: 39/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 18 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>118 SE AVE</strong> — Cape Coral, FL | 10 units</div>
+                <div class="lead-info">Score: 38/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 48 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>148 SE AVE</strong> — Cape Coral, FL | 10 units</div>
+                <div class="lead-info">Score: 38/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 17 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>117 SE AVE</strong> — Cape Coral, FL | 9 units</div>
+                <div class="lead-info">Score: 37/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 47 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>147 SE AVE</strong> — Cape Coral, FL | 9 units</div>
+                <div class="lead-info">Score: 37/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 16 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>116 SE AVE</strong> — Cape Coral, FL | 8 units</div>
+                <div class="lead-info">Score: 36/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 46 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>146 SE AVE</strong> — Cape Coral, FL | 8 units</div>
+                <div class="lead-info">Score: 36/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 15 <span class="status engaged">Engaged</span></h3>
+                <div class="lead-info"><strong>115 SE AVE</strong> — Cape Coral, FL | 7 units</div>
+                <div class="lead-info">Score: 35/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 45 <span class="status engaged">Engaged</span></h3>
+                <div class="lead-info"><strong>145 SE AVE</strong> — Cape Coral, FL | 7 units</div>
+                <div class="lead-info">Score: 35/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 14 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>114 SE AVE</strong> — Cape Coral, FL | 6 units</div>
+                <div class="lead-info">Score: 34/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 44 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>144 SE AVE</strong> — Cape Coral, FL | 6 units</div>
+                <div class="lead-info">Score: 34/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 13 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>113 SE AVE</strong> — Cape Coral, FL | 5 units</div>
+                <div class="lead-info">Score: 33/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 43 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>143 SE AVE</strong> — Cape Coral, FL | 5 units</div>
+                <div class="lead-info">Score: 33/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 12 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>112 SE AVE</strong> — Cape Coral, FL | 4 units</div>
+                <div class="lead-info">Score: 32/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 42 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>142 SE AVE</strong> — Cape Coral, FL | 4 units</div>
+                <div class="lead-info">Score: 32/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Llc <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>1031/1101 SE 24TH AVE</strong> — Cape Coral, FL | 2 units</div>
+                <div class="lead-info">Score: 31/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 11 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>111 SE AVE</strong> — Cape Coral, FL | 3 units</div>
+                <div class="lead-info">Score: 31/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 41 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>141 SE AVE</strong> — Cape Coral, FL | 3 units</div>
+                <div class="lead-info">Score: 31/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 10 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>110 SE AVE</strong> — Cape Coral, FL | 2 units</div>
+                <div class="lead-info">Score: 30/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 40 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>140 SE AVE</strong> — Cape Coral, FL | 2 units</div>
+                <div class="lead-info">Score: 30/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 9 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>109 SE AVE</strong> — Cape Coral, FL | 11 units</div>
+                <div class="lead-info">Score: 29/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 39 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>139 SE AVE</strong> — Cape Coral, FL | 11 units</div>
+                <div class="lead-info">Score: 29/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 8 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>108 SE AVE</strong> — Cape Coral, FL | 10 units</div>
+                <div class="lead-info">Score: 28/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 38 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>138 SE AVE</strong> — Cape Coral, FL | 10 units</div>
+                <div class="lead-info">Score: 28/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 7 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>107 SE AVE</strong> — Cape Coral, FL | 9 units</div>
+                <div class="lead-info">Score: 27/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 37 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>137 SE AVE</strong> — Cape Coral, FL | 9 units</div>
+                <div class="lead-info">Score: 27/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 6 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>106 SE AVE</strong> — Cape Coral, FL | 8 units</div>
+                <div class="lead-info">Score: 26/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 36 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>136 SE AVE</strong> — Cape Coral, FL | 8 units</div>
+                <div class="lead-info">Score: 26/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 5 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>105 SE AVE</strong> — Cape Coral, FL | 7 units</div>
+                <div class="lead-info">Score: 25/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 35 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>135 SE AVE</strong> — Cape Coral, FL | 7 units</div>
+                <div class="lead-info">Score: 25/100 | Last email: N/A</div>
+            </div>
+
+            <div class="lead-card">
+                <h3>Owner 4 <span class="status contacted">Contacted</span></h3>
+                <div class="lead-info"><strong>104 SE AVE</strong> — Cape Coral, FL | 6 units</div>
+                <div class="lead-info">Score: 24/100 | Last email: N/A</div>
+            </div>
+
         </div>
-        
-        <div class="updated">Last updated: 2026-05-22 22:11:26</div>
+    </div>
+    
+    <div class="last-update">
+        Last updated: 2026-05-23 12:02:48  <br>
+        <a href="https://github.com/droc214/khi-origination-os" style="color:#3498db;text-decoration:none;">View on GitHub</a>
     </div>
 </body>
 </html>
