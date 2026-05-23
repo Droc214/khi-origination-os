@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Stats &#8212; KHI OS</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{background:#0a0f1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;}
-.hdr{background:#0d1b2e;border-bottom:1px solid #1e2a3a;padding:16px;position:sticky;top:0;z-index:10;}
-.hdr-title{font-size:18px;font-weight:800;color:#c9a84c;letter-spacing:-0.5px;}
-.hdr-sub{font-size:11px;color:#475569;margin-top:2px;}
-.tabs{display:flex;background:#0d1b2e;border-bottom:1px solid #1e2a3a;}
-.tab{flex:1;text-align:center;padding:12px 4px;font-size:12px;font-weight:700;color:#475569;text-transform:uppercase;letter-spacing:0.5px;text-decoration:none;border-bottom:2px solid transparent;}
-.tab.active{color:#c9a84c;border-bottom-color:#c9a84c;}
-.card{background:#0d1b2e;border:1px solid #1e2a3a;border-radius:12px;padding:16px;margin-bottom:14px;}
-.label{font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
-.val{font-size:14px;color:#94a3b8;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - KHI Origination OS</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #333; }
+        .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 2rem; }
+        .header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .nav { background: #fff; border-bottom: 1px solid #ddd; padding: 1rem 2rem; display: flex; gap: 2rem; }
+        .nav a { text-decoration: none; color: #333; font-weight: 500; }
+        .nav a:hover { color: #1a1a2e; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+        .stat-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .stat-card h3 { color: #666; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 1rem; }
+        .stat-card .value { font-size: 2rem; font-weight: bold; color: #1a1a2e; margin-bottom: 0.5rem; }
+        .stat-card .breakdown { font-size: 0.85rem; color: #999; }
+    </style>
 </head>
 <body>
-<div class="hdr"><div class="hdr-title">KHI Origination OS</div></div>
-<div class="tabs"><a href="index.html" class="tab ">Pipeline</a><a href="tasks.html" class="tab ">Tasks</a><a href="stats.html" class="tab active">Stats</a></div>
-<div style="padding:16px;">
-  <div class="card">
-    <div style="font-size:12px;color:#c9a84c;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Pipeline Overview</div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #1e2a3a;"><div style="font-size:14px;color:#e2e8f0;">Total Contacts</div><div style="font-size:20px;font-weight:900;color:#c9a84c;">702</div></div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #1e2a3a;"><div style="font-size:14px;color:#e2e8f0;">Contacted</div><div style="font-size:20px;font-weight:900;color:#c9a84c;">697</div></div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #1e2a3a;"><div style="font-size:14px;color:#e2e8f0;">Engaged</div><div style="font-size:20px;font-weight:900;color:#c9a84c;">1</div></div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #1e2a3a;"><div style="font-size:14px;color:#e2e8f0;">Bounced / Undeliverable</div><div style="font-size:20px;font-weight:900;color:#c9a84c;">1</div></div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #1e2a3a;"><div style="font-size:14px;color:#e2e8f0;">Average Score</div><div style="font-size:20px;font-weight:900;color:#c9a84c;">3</div></div>
-  </div>
-  <div class="card">
-    <div style="font-size:12px;color:#c9a84c;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Segments</div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #1e2a3a;"><div style="font-size:14px;color:#e2e8f0;">Individual</div><div style="font-size:20px;font-weight:900;color:#c9a84c;">406</div></div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #1e2a3a;"><div style="font-size:14px;color:#e2e8f0;">LLC / Company</div><div style="font-size:20px;font-weight:900;color:#c9a84c;">157</div></div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #1e2a3a;"><div style="font-size:14px;color:#e2e8f0;">Absentee Owner</div><div style="font-size:20px;font-weight:900;color:#c9a84c;">139</div></div>
-  </div>
-  <div class="card">
-    <div style="font-size:12px;color:#c9a84c;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Contact Data</div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #1e2a3a;"><div style="font-size:14px;color:#e2e8f0;">DNC Flagged</div><div style="font-size:20px;font-weight:900;color:#c9a84c;">54</div></div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #1e2a3a;"><div style="font-size:14px;color:#e2e8f0;">Multi-Email Contacts</div><div style="font-size:20px;font-weight:900;color:#c9a84c;">228</div></div>
-  </div>
-</div>
-</body></html>
+    <div class="header">
+        <h1>KHI Origination OS</h1>
+        <p>Statistics & Analytics</p>
+    </div>
+    <div class="nav">
+        <a href="index.html">Pipeline</a>
+        <a href="stats.html">Statistics</a>
+        <a href="tasks.html">Tasks</a>
+    </div>
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Leads</h3>
+                <div class="value">702</div>
+                <div class="breakdown">All contacted prospects</div>
+            </div>
+            <div class="stat-card">
+                <h3>By Sequence</h3>
+                <div class="breakdown">
+                    A (Individual): 406<br>
+                    B (LLC): 165<br>
+                    C (Absentee): 131
+                </div>
+            </div>
+            <div class="stat-card">
+                <h3>Status Distribution</h3>
+                <div class="breakdown">
+                    Contacted: 697<br>
+                    Engaged: 1
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
