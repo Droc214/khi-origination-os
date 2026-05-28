@@ -1,560 +1,881 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>KHI Origination OS</title><style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0a0f1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.6}
-.hdr{background:#0d1b2e;border-bottom:1px solid #1e2a3a;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
-.hdr-title{font-size:18px;font-weight:800;color:#c9a84c}
-.tabs{display:flex;gap:0;border-bottom:1px solid #1e2a3a;background:#0a0f1a}
-.tab{flex:1;padding:12px;text-align:center;color:#64748b;text-decoration:none;border-bottom:2px solid transparent;font-size:13px;font-weight:700}
-.tab.active{color:#c9a84c;border-bottom-color:#c9a84c}
-.card{background:#0d1b2e;border:1px solid #1e2a3a;border-radius:8px;padding:14px;margin-bottom:10px}
-</style></head><body><div class="hdr"><div class="hdr-title">KHI Origination OS</div></div><div class="tabs"><a href="index.html" class="tab active">Pipeline</a><a href="tasks.html" class="tab ">Tasks</a><a href="stats.html" class="tab ">Stats</a></div><div style="padding:16px;"><div style="color:#94a3b8;font-size:13px;margin-bottom:16px;">Top 50 by score</div><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Academy Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">Academy LLC</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#6b7280;font-weight:700;font-size:12px;white-space:nowrap;">New</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">51</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Dahab Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">Dahab LLC</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f97316;font-weight:700;font-size:12px;white-space:nowrap;">Bounced</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">44</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Clay Properties Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">Clay Properties LLC</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">35</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Sw 48th Ter Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">SW 48th Ter LLC</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">34</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Richards Properties Llc Bryce</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Realty Inc Aster</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Realty Holdings Llc Antnick</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Properties Llc Dimora</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Properties Llc Cljj</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Places In The Sun Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc Dgif</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc Cunnouda</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc Csrmm</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc Carm</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc Aujese</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc Aryx</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc Ageepa</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc A&mbs</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc 1345 Bushwood</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">L 3 Sons Properties Inc D</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Initiatives Group Llc Business</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Hills Rental Llc Beacon</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Ft Llc Csma</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Family Properties Ltd Bleser</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Diplomat Apartments Llc Coral</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Coral Dg Llc Cape</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Cocktail Llc Coral</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#10b981;font-weight:700;font-size:12px;white-space:nowrap;">Engaged</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Asset Management Llc Bd</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">51 Llc Dragonfish</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">32</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Wildcat Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Vincennes St Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Star Equity Group Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Se 6th St Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Se 5th Place Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Se 24th Ave Cc Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Se 16th Pl Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Se 12 Ave Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Property Owner</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc Tr</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Academy Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2116 Ne 6th St Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">31</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Se 40th Terrace Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">SE 40th Terrace LLC</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">30</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Jeffrey Abbott</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">21</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Claudia Lisset Abreu</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#6b7280;font-weight:700;font-size:12px;white-space:nowrap;">New</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">21</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Yanisleidy Acea</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;"></div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#6b7280;font-weight:700;font-size:12px;white-space:nowrap;">New</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">20</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Victoria Dr Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">18</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Viceroy Street Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">18</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Viceroy Court Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">18</div>
-</div>
-</div>
-</a><a href="#" style="text-decoration:none;display:block;margin-bottom:10px;">
-<div style="background:#0d1b2e;border:1px solid #1e2a3a;border-radius:6px;padding:10px;display:flex;gap:10px;align-items:center;">
-<div style="flex:1;overflow:hidden;">
-<div style="color:#e2e8f0;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Tudor Drive Llc</div>
-<div style="color:#475569;font-size:12px;margin-top:3px;">None</div>
-</div>
-<div style="text-align:right;flex:0 0 auto;">
-<div style="color:#f59e0b;font-weight:700;font-size:12px;white-space:nowrap;">Contacted</div>
-<div style="color:#c9a84c;font-weight:700;font-size:13px;margin-top:2px;">18</div>
-</div>
-</div>
-</a></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KHI Origination OS</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9fafb; color: #1f2937; }
+        header { background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); color: white; padding: 2rem; text-align: center; }
+        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        header p { opacity: 0.9; }
+        nav { background: white; border-bottom: 1px solid #e5e7eb; padding: 1rem; text-align: center; }
+        nav a { margin: 0 1rem; text-decoration: none; color: #1e40af; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .stat-card { background: white; padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #1e40af; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .stat-value { font-size: 2rem; font-weight: bold; color: #1e40af; }
+        .stat-label { color: #6b7280; font-size: 0.875rem; }
+        table { width: 100%; background: white; border-collapse: collapse; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        th { background: #f3f4f6; padding: 1rem; text-align: left; font-weight: 600; color: #374151; }
+        td { padding: 0.75rem 1rem; border-top: 1px solid #e5e7eb; }
+        tr:hover { background: #f9fafb; }
+        .status-badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; color: white; }
+        .score { font-weight: 600; }
+        .link { color: #1e40af; text-decoration: none; cursor: pointer; }
+        .link:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 2rem; color: #6b7280; font-size: 0.875rem; border-top: 1px solid #e5e7eb; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KHI Origination OS</h1>
+        <p>Lead Pipeline & Scoring Dashboard</p>
+    </header>
+    <nav>
+        <a href="index.html">Pipeline</a>
+        <a href="stats.html">Stats</a>
+        <a href="tasks.html">Tasks</a>
+    </nav>
+    <div class="container">
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value">100</div>
+                <div class="stat-label">Total Leads</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Engaged</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">100</div>
+                <div class="stat-label">Contacted</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">0</div>
+                <div class="stat-label">New (Untouched)</div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Status</th>
+                    <th>PM Score</th>
+                    <th>Overall</th>
+                    <th>Units</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Daphne Zeh</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Douglas J & Zell</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Randall J & Denise + Zeravich</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Qi Lei & Wang Yan Lin Zhang</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Yu Zhang</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Sonny & Xu Hong Tr Zhan</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Hui + Zhao</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Ling Zhao</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Yan Zhao</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Zhong Dong Zheng</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Lila Zieminski</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Karl G Jr Zimmermann</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Properties Llc Zj</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Alan Mark Tr Zoltie</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Paul Tr Zoltie</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Ferenc Zsemlye</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Vyacheslav & Irina Zukerman</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Kenneth P & Helene I Tr Zuman</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Alma Y & Pablo A Tr Zuniga</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Denys Zuniga</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Sunny Florida Inc Zzz</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Mark C Sr & Williamson</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Michele K & Williamson</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>"'+ Sons Marine Cons" Williamson</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Michael J Willis</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Jacquie L Willman</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Archer Property Brother Wilson</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Mechele Tr Wilson</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Ricardo Wilson</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Todd A & Tammy L Wilson</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>George & Veronica Wirth</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Michael & Karen Witty</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Smith Enterprises Llc Wj</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Legacy Llc W</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Heath A Tr Wolfe</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Bruce Wolffis</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Richard George & Wombwell</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Maria R Wroten</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Richmond Huynh & Wynn</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Irina + Yadgarova</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Yuri Yanez</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Joanne Yang</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Xing Jin Yang</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Partners Group Llc Yao</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Marcos A + Yapur</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Andrey Yarosh</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Kenneth Suey Kee & Yee</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Properties Llc Yellowtail</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>James J & Susan H Tr Yonjof</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Daisuke & Yuri Yoshida</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Ellen + Young</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Shenodh & Yousef</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Alexander & Teona Zaliznyak</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Fl Llc + Zameen</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Brian P Zarb</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Samuel James & Whitaker</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Robert L Tr White</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Kory Michael Whiteside</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>John E L/e Whitfield</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Inc Widler</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Cynthia Tr Wiedefeld</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Estate Enterprises Llc Wiley</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>E Gaboriault Jr Trust Wilfrid</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Thomas M Wilhelm</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>G Mike + Wilke</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Jesse Willert</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Michael J + Willett</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>George & Delia William</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>R Sawyer Llc William</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Della Williams</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Jordan C Williamson</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Leonid & Volchek</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Evette D Volker</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Violeta Tr Vollrath</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Anthony & Rachel Wachtel</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>John H Wachter</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Audra Rose + Waddell</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Patricia A Waggoner</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Edward J & Marcy T Walker</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Linda L Walsh</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Eric P & Marion Waltz</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Hui-kwang & Julie Tr Wang</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>John Iii Waszmer</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>James L Jr & Watford</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Thomas A Webber</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Jhyshain A Wee</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Jason T & Dena Wells</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Christine S Tr Werny</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Properties Llc Wesluc</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Bay 1718 1720 Llc West</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Carey L + West</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>James Leo & Whalen</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>At 1014 Llc Vineyard</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Vladimir Tr Vitasek</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>William Vittetoe</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Fossen Noah Gabriel + Van</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Dorothy A L/e Vankleeck</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Nguyen Chung & Van</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Wattingen Neil + Elizabeth Van</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>Gonzalez Osbel Vargas</strong></td>
+                    <td></td>
+                    <td><span class="status-badge" style="background-color: #f59e0b;">Contacted</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td><span class="score" style="color: #ef4444;">0</span></td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>Last updated: 2026-05-28 10:13:06 ET</p>
+        <p>KHI Real Estate Origination OS</p>
+    </footer>
+</body>
+</html>
