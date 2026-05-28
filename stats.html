@@ -1,75 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stats - KHI Origination OS</title>
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f3f4f6; padding: 20px; }
-    .container { max-width: 1200px; margin: 0 auto; }
-    header { background: white; padding: 20px 30px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 30px; }
-    header h1 { color: #1f2937; margin-bottom: 10px; }
-    nav { display: flex; gap: 15px; margin-top: 15px; }
-    nav a { padding: 8px 16px; background: #3b82f6; color: white; border-radius: 6px; text-decoration: none; font-size: 0.9em; }
-    nav a:hover { background: #2563eb; }
-    nav a.active { background: #1e40af; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
-    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-    .card h3 { color: #1f2937; margin-bottom: 8px; }
-    .card .value { font-size: 2em; font-weight: bold; color: #3b82f6; }
-    .card .label { color: #6b7280; font-size: 0.85em; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>KHI Origination OS — Statistics</h1>
-      <nav>
-        <a href="index.html">Pipeline</a>
-        <a href="stats.html" class="active">Stats</a>
-        <a href="tasks.html">Tasks</a>
-      </nav>
-    </header>
-
-    <div class="grid">
-      <div class="card">
-        <div class="label">Total Leads</div>
-        <div class="value">2223</div>
-      </div>
-      <div class="card">
-        <div class="label">Average Score</div>
-        <div class="value">0</div>
-      </div>
-      <div class="card">
-        <div class="label">Highest Score</div>
-        <div class="value">51</div>
-      </div>
-      <div class="card">
-        <div class="label">Contacted</div>
-        <div class="value">1130</div>
-      </div>
-      <div class="card">
-        <div class="label">New</div>
-        <div class="value">1073</div>
-      </div>
-      <div class="card">
-        <div class="label">All Emails Bounced</div>
-        <div class="value">17</div>
-      </div>
-      <div class="card">
-        <div class="label">Terminated</div>
-        <div class="value">1</div>
-      </div>
-      <div class="card">
-        <div class="label">Engaged</div>
-        <div class="value">1</div>
-      </div>
-      <div class="card">
-        <div class="label">Bounced</div>
-        <div class="value">1</div>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Stats</title><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0f1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.6}
+.hdr{background:#0d1b2e;border-bottom:1px solid #1e2a3a;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+.hdr-title{font-size:18px;font-weight:800;color:#c9a84c}
+.tabs{display:flex;gap:0;border-bottom:1px solid #1e2a3a;background:#0a0f1a}
+.tab{flex:1;padding:12px;text-align:center;color:#64748b;text-decoration:none;border-bottom:2px solid transparent;font-size:13px;font-weight:700}
+.tab.active{color:#c9a84c;border-bottom-color:#c9a84c}
+.card{background:#0d1b2e;border:1px solid #1e2a3a;border-radius:8px;padding:14px;margin-bottom:10px}
+</style></head><body><div class="hdr"><div class="hdr-title">KHI Origination OS</div></div><div class="tabs"><a href="index.html" class="tab ">Pipeline</a><a href="tasks.html" class="tab ">Tasks</a><a href="stats.html" class="tab active">Stats</a></div><div style="padding:16px;"><div class="card"><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Total Contacts</div><div style="color:#e2e8f0;font-weight:700;">2223</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Contacted</div><div style="color:#e2e8f0;font-weight:700;">1182</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Engaged</div><div style="color:#e2e8f0;font-weight:700;">1</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Bounced</div><div style="color:#e2e8f0;font-weight:700;">1</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Avg Score</div><div style="color:#e2e8f0;font-weight:700;">1.0</div></div></div><div class="card"><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Individual</div><div style="color:#e2e8f0;font-weight:700;">1385</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">LLC/Company</div><div style="color:#e2e8f0;font-weight:700;">443</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Absentee</div><div style="color:#e2e8f0;font-weight:700;">480</div></div></div><div class="card"><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">DNC Flagged</div><div style="color:#e2e8f0;font-weight:700;">54</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Multi-Email</div><div style="color:#e2e8f0;font-weight:700;">1410</div></div></div></div></body></html>
