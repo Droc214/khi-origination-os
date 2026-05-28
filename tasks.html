@@ -1,10 +1,52 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Tasks</title><style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0a0f1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.6}
-.hdr{background:#0d1b2e;border-bottom:1px solid #1e2a3a;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
-.hdr-title{font-size:18px;font-weight:800;color:#c9a84c}
-.tabs{display:flex;gap:0;border-bottom:1px solid #1e2a3a;background:#0a0f1a}
-.tab{flex:1;padding:12px;text-align:center;color:#64748b;text-decoration:none;border-bottom:2px solid transparent;font-size:13px;font-weight:700}
-.tab.active{color:#c9a84c;border-bottom-color:#c9a84c}
-.card{background:#0d1b2e;border:1px solid #1e2a3a;border-radius:8px;padding:14px;margin-bottom:10px}
-</style></head><body><div class="hdr"><div class="hdr-title">KHI Origination OS</div></div><div class="tabs"><a href="index.html" class="tab ">Pipeline</a><a href="tasks.html" class="tab active">Tasks</a><a href="stats.html" class="tab ">Stats</a></div><div style="padding:40px 16px;text-align:center;color:#475569;font-size:14px;">No tasks</div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks - KHI Origination OS</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f3f4f6; padding: 20px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    header { background: white; padding: 20px 30px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 30px; }
+    header h1 { color: #1f2937; margin-bottom: 10px; }
+    nav { display: flex; gap: 15px; margin-top: 15px; }
+    nav a { padding: 8px 16px; background: #3b82f6; color: white; border-radius: 6px; text-decoration: none; font-size: 0.9em; }
+    nav a:hover { background: #2563eb; }
+    nav a.active { background: #1e40af; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    th { background: #f3f4f6; padding: 12px 15px; text-align: left; font-weight: 600; color: #374151; border-bottom: 1px solid #e5e7eb; }
+    td { padding: 12px 15px; border-bottom: 1px solid #e5e7eb; }
+    tr:hover { background: #f9fafb; }
+    .priority-high { color: #dc2626; font-weight: bold; }
+    .priority-medium { color: #f59e0b; font-weight: bold; }
+    .priority-low { color: #10b981; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>KHI Origination OS — Tasks</h1>
+      <nav>
+        <a href="index.html">Pipeline</a>
+        <a href="stats.html">Stats</a>
+        <a href="tasks.html" class="active">Tasks</a>
+      </nav>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Lead Name</th>
+          <th>Task Type</th>
+          <th>Due Date</th>
+          <th>Priority</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
