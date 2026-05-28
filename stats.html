@@ -1,67 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Statistics — KHI Origination OS</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9fafb; color: #1f2937; }
-        header { background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); color: white; padding: 2rem; text-align: center; }
-        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-        nav { background: white; border-bottom: 1px solid #e5e7eb; padding: 1rem; text-align: center; }
-        nav a { margin: 0 1rem; text-decoration: none; color: #1e40af; font-weight: 500; }
-        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-        .stat-card { background: white; padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid #1e40af; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .stat-value { font-size: 2.5rem; font-weight: bold; color: #1e40af; }
-        .stat-label { color: #6b7280; font-size: 0.875rem; margin-top: 0.5rem; }
-        .stat-desc { color: #9ca3af; font-size: 0.75rem; margin-top: 0.25rem; }
-        footer { text-align: center; padding: 2rem; color: #6b7280; font-size: 0.875rem; border-top: 1px solid #e5e7eb; margin-top: 3rem; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>KHI Origination OS — Statistics</h1>
-    </header>
-    <nav>
-        <a href="index.html">Pipeline</a>
-        <a href="stats.html">Stats</a>
-        <a href="tasks.html">Tasks</a>
-    </nav>
-    <div class="container">
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value">100</div>
-                <div class="stat-label">Total Leads in Pipeline</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">0</div>
-                <div class="stat-label">New (Untouched)</div>
-                <div class="stat-desc">0.0% of pipeline</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">100</div>
-                <div class="stat-label">Contacted</div>
-                <div class="stat-desc">100.0% of pipeline</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">0</div>
-                <div class="stat-label">Engaged</div>
-                <div class="stat-desc">0.0% of pipeline</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">0</div>
-                <div class="stat-label">Bounced / Undeliverable</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">0</div>
-                <div class="stat-label">Terminated (Opted Out)</div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <p>Last updated: 2026-05-28 10:13:06 ET</p>
-    </footer>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Stats</title><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0f1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.6}
+.hdr{background:#0d1b2e;border-bottom:1px solid #1e2a3a;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+.hdr-title{font-size:18px;font-weight:800;color:#c9a84c}
+.tabs{display:flex;gap:0;border-bottom:1px solid #1e2a3a;background:#0a0f1a}
+.tab{flex:1;padding:12px;text-align:center;color:#64748b;text-decoration:none;border-bottom:2px solid transparent;font-size:13px;font-weight:700}
+.tab.active{color:#c9a84c;border-bottom-color:#c9a84c}
+.card{background:#0d1b2e;border:1px solid #1e2a3a;border-radius:8px;padding:14px;margin-bottom:10px}
+</style></head><body><div class="hdr"><div class="hdr-title">KHI Origination OS</div></div><div class="tabs"><a href="index.html" class="tab ">Pipeline</a><a href="tasks.html" class="tab ">Tasks</a><a href="stats.html" class="tab active">Stats</a></div><div style="padding:16px;"><div class="card"><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Total Contacts</div><div style="color:#e2e8f0;font-weight:700;">2223</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Contacted</div><div style="color:#e2e8f0;font-weight:700;">1082</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Engaged</div><div style="color:#e2e8f0;font-weight:700;">1</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Bounced</div><div style="color:#e2e8f0;font-weight:700;">1</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Avg Score</div><div style="color:#e2e8f0;font-weight:700;">1.0</div></div></div><div class="card"><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Individual</div><div style="color:#e2e8f0;font-weight:700;">1385</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">LLC/Company</div><div style="color:#e2e8f0;font-weight:700;">443</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Absentee</div><div style="color:#e2e8f0;font-weight:700;">480</div></div></div><div class="card"><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">DNC Flagged</div><div style="color:#e2e8f0;font-weight:700;">54</div></div><div style="padding:10px 0;border-bottom:1px solid #1e2a3a;display:flex;justify-content:space-between;"><div style="color:#94a3b8;">Multi-Email</div><div style="color:#e2e8f0;font-weight:700;">1410</div></div></div></div></body></html>
